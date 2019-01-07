@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secret Santa</title>
+    {% load staticfiles %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <div id="holder">
+
+        <div class="button" onclick="window.location.href = '{%  url 'newgroup'  %}'">
+            <p class="btnText">SECRET SANTA</p>
+            <div class="btnTwo">
+                <p class="btnText2">START</p>
+            </div>
+        </div>
+
+        <div class="button">
+            <p class="btnText">INFO</p>
+            <div class="btnTwo">
+                <p class="btnText2">?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Saidumlo Santa</h5>
+                    <p class="grey-text text-lighten-4">We all know the rules to the game! <br> Bring at least 3
+                        friends to a group including yourself and play Secret Santa with them! <br> This site will do the random
+                        matchmaking and send out emails.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018
+                <a class="grey-text text-lighten-4 right" href="https://bregvadze.ge">Niki Bregvadze</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
